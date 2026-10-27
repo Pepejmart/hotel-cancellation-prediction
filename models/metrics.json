@@ -1,0 +1,56 @@
+{
+  "trained_on": "synthetic data (src/generate_synthetic_data.py)",
+  "trained_at": "2026-10-27T00:47:37",
+  "model_type": "LightGBM",
+  "n_train": 21000,
+  "n_test": 9000,
+  "parameters": {
+    "learning_rate": 0.0875,
+    "num_leaves": 141,
+    "max_depth": 12,
+    "min_child_samples": 18,
+    "subsample": 0.739,
+    "colsample_bytree": 0.901,
+    "reg_alpha": 2.4e-07,
+    "reg_lambda": 0.00028,
+    "objective": "binary",
+    "is_unbalance": true,
+    "n_estimators": 100,
+    "random_state": 42,
+    "verbose": -1
+  },
+  "test_metrics": {
+    "accuracy": 0.7579,
+    "auc_roc": 0.8129,
+    "average_precision_score": 0.6604,
+    "recall_score": 0.6731,
+    "precision_score": 0.598,
+    "f1_score": 0.6334
+  },
+  "features": [
+    "FUENTE_NEGOCIO_SEGMENTO_CLIENTE",
+    "PAIS_TOP_200",
+    "LEAD_TIME",
+    "LOYALTY_REWARDS",
+    "COMPLEJO_RESERVA",
+    "ADR",
+    "HORA_TOMA_COS",
+    "MES_LLEGADA_SIN",
+    "TIPO_VIAJERO",
+    "REV_PAX",
+    "ES_GRUPO",
+    "TIENE_FIDELIDAD",
+    "MES_LLEGADA_COS",
+    "HOTEL_HABITACION_TOP",
+    "NOCHES",
+    "ADULTOS",
+    "HORA_TOMA_SIN"
+  ],
+  "categorical_features": [
+    "FUENTE_NEGOCIO_SEGMENTO_CLIENTE",
+    "PAIS_TOP_200",
+    "COMPLEJO_RESERVA",
+    "TIPO_VIAJERO",
+    "HOTEL_HABITACION_TOP"
+  ]
+}

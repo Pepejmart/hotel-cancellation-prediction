@@ -1,0 +1,9 @@
+# Everything needed to run the notebooks (EDA / modelling experiments)
+-r requirements.txt
+seaborn>=0.13
+xgboost>=2.0
+catboost>=1.2
+optuna>=3.5
+category_encoders>=2.6
+jupyter
+yfinance>=0.2

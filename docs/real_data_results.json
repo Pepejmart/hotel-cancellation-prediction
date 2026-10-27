@@ -1,0 +1,75 @@
+{
+    "experiment_id": "20260206_142533",
+    "model_type": "LightGBM",
+    "model_file": "lightgbm.joblib",
+    "parametros_finales": {
+        "learning_rate": 0.08749851331662394,
+        "num_leaves": 141,
+        "max_depth": 12,
+        "min_child_samples": 18,
+        "subsample": 0.7392113838905671,
+        "colsample_bytree": 0.9013795545896671,
+        "reg_alpha": 2.443773634458805e-07,
+        "reg_lambda": 0.000283482718231723,
+        "objective": "binary",
+        "metric": "auc",
+        "is_unbalance": true,
+        "random_state": 42
+    },
+    "metricas_test": {
+        "accuracy": 0.7754896441376041,
+        "auc_roc": 0.8704395299132687,
+        "average_precision_score": 0.802281804542371,
+        "recall_score": 0.8009813672833367,
+        "precision_score": 0.6647881743035453,
+        "f1_score": 0.726557519036678,
+        "best_iteration": 100
+    },
+    "classification_report": {
+        "0": {
+            "precision": 0.8655780582402522,
+            "recall": 0.7603647837342334,
+            "f1-score": 0.809567293595275,
+            "support": 127089.0
+        },
+        "1": {
+            "precision": 0.6647881743035453,
+            "recall": 0.8009813672833367,
+            "f1-score": 0.726557519036678,
+            "support": 75405.0
+        },
+        "accuracy": 0.7754896441376041,
+        "macro avg": {
+            "precision": 0.7651831162718987,
+            "recall": 0.7806730755087851,
+            "f1-score": 0.7680624063159764,
+            "support": 202494.0
+        },
+        "weighted avg": {
+            "precision": 0.7908076393722987,
+            "recall": 0.7754896441376041,
+            "f1-score": 0.778655997208266,
+            "support": 202494.0
+        }
+    },
+    "variables_usadas": [
+        "FUENTE_NEGOCIO_SEGMENTO_CLIENTE",
+        "PAIS_TOP_200",
+        "LEAD_TIME",
+        "LOYALTY_REWARDS",
+        "COMPLEJO_RESERVA",
+        "ADR",
+        "HORA_TOMA_COS",
+        "MES_LLEGADA_SIN",
+        "TIPO_VIAJERO",
+        "REV_PAX",
+        "ES_GRUPO",
+        "TIENE_FIDELIDAD",
+        "MES_LLEGADA_COS",
+        "HOTEL_HABITACION_TOP",
+        "NOCHES",
+        "ADULTOS",
+        "CANCELADO",
+        "HORA_TOMA_SIN"
+    ]
+}

@@ -1,0 +1,32 @@
+# --- Secrets -------------------------------------------------------------
+.env
+.env.*
+!.env.example
+**/.streamlit/secrets.toml
+*service_account*.json
+*credentials*.json
+
+# --- Data: never commit real or generated datasets -----------------------
+data/*
+!data/README.md
+*.csv
+*.parquet
+*.xlsx
+*.xls
+
+# --- Python / tooling ----------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.bak
+catboost_info/
+
+# --- Large media ---------------------------------------------------------
+*.mov
+*.mp4
